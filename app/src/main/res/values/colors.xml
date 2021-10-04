@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorIndigo">#4B0082</color>
+    <color name="colorGradient">#ff99cc</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="backgroundColor">#ffffff</color>
+    <color name="fieldBoxColor">#f2f2f2</color>
+    <color name="topnavbuttonColor">#01b9f5</color>
+    <color name="icontextColor">#012b74</color>
+    <color name="dashBackground">#f3f6fb</color>
+    <color name="search_text">#e7e7e7</color>
+</resources>

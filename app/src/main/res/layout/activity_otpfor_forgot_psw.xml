@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_for_login"
+    android:fitsSystemWindows="true"
+    tools:context=".OTPActivityForForgotPsw">
+
+    <Button
+        android:id="@+id/backButtonOtpForgotPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableStart="@drawable/ic_baseline_arrow_back_24"
+        android:drawableTint="@color/white"
+        android:paddingStart="10dp"
+        android:paddingLeft="12dp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        />
+
+    <TextView
+        android:id="@+id/verification_otp_forgot_psw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/topnavbuttonColor"
+        android:fontFamily="times new roman"
+        android:paddingStart="10dp"
+        android:paddingLeft="12dp"
+        android:text="@string/verification"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewForgotPsw">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/backgroundColor"
+            android:fitsSystemWindows="true"
+            app:layout_constraintTop_toBottomOf="@+id/verification_otp_forgot_psw">
+
+
+            <TextView
+                android:id="@+id/verification_text_otp_forgot_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="72dp"
+                android:fontFamily="times new roman"
+                android:text="@string/verify_code"
+                android:textColor="@color/icontextColor"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/constraint_layout1"
+                app:layout_constraintTop_toTopOf="@+id/constraint_layout1" />
+
+            <TextView
+                android:id="@+id/enter_otp_text_forgot_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:fontFamily="times new roman"
+                android:gravity="center_horizontal"
+                android:text="@string/otp_txt"
+                android:textColor="@color/icontextColor"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/verification_text_otp_forgot_psw"
+                app:layout_constraintStart_toStartOf="@+id/verification_text_otp_forgot_psw"
+                app:layout_constraintTop_toBottomOf="@+id/verification_text_otp_forgot_psw" />
+
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinView_forgot_psw"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="58dp"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="18sp"
+                app:itemCount="6"
+                app:itemHeight="48dp"
+                app:itemRadius="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/enter_otp_text_forgot_psw"
+                app:layout_constraintStart_toStartOf="@+id/enter_otp_text_forgot_psw"
+                app:layout_constraintTop_toBottomOf="@+id/enter_otp_text_forgot_psw"
+                app:lineColor="@color/icontextColor"
+                app:viewType="rectangle" />
+
+            <Button
+                android:id="@+id/resend_btn_forgot_psw"
+                android:layout_width="99dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:foreground="@mipmap/ic_resend_otp_round"
+                app:layout_constraintStart_toStartOf="@+id/pinView_forgot_psw"
+                app:layout_constraintTop_toBottomOf="@+id/pinView_forgot_psw" />
+
+            <TextView
+                android:id="@+id/resend_text_forgot_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="times new roman"
+                android:text="@string/resend_otp"
+                android:textColor="@color/icontextColor"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/enter_otp_text_forgot_psw"
+                app:layout_constraintStart_toStartOf="@+id/enter_otp_text_forgot_psw"
+                app:layout_constraintTop_toBottomOf="@+id/resend_btn_forgot_psw" />
+
+            <Button
+                android:id="@+id/button_submit_forgot_psw"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginRight="33dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="times new roman"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/sumbit_otp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/resend_text_forgot_psw"
+                app:layout_constraintTop_toBottomOf="@+id/resend_text_forgot_psw" />
+
+            <ProgressBar
+                android:id="@+id/progressbarOtp_forgot_psw"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

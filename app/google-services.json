@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "430486521571",
+    "project_id": "finalproject-c3b73",
+    "storage_bucket": "finalproject-c3b73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430486521571:android:457fc64b642377d21b27d6",
+        "android_client_info": {
+          "package_name": "android.example.employnepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430486521571-nop4i53b8qq9430srfnon4geidtea1t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtc7KO2R2yaVPdt4dybuwOz5tGf0sAUm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430486521571-nop4i53b8qq9430srfnon4geidtea1t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

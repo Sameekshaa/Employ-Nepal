@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_job">
+
+    <fragment
+        android:id="@+id/navigation_job"
+        android:name="android.example.employnepal.ui.job.JobFragment"
+        android:label="@string/title_job"
+        tools:layout="@layout/fragment_job" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="android.example.employnepal.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="android.example.employnepal.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

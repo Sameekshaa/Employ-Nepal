@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowJobProviderActivity">
+
+    <LinearLayout
+
+        android:id="@+id/linear_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topnavbuttonColor"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/back_button_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:drawableTint="@color/white"
+            android:paddingStart="10dp"
+            android:paddingLeft="12dp" />
+
+        <TextView
+
+            android:id="@+id/apply_job"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/topnavbuttonColor"
+            android:fontFamily="times new roman"
+            android:text="@string/show_job"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout4">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fitsSystemWindows="true"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/apply_job">
+
+                <TextView
+                    android:id="@+id/apply_job_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_title"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_title_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_title"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_title"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_post_date"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_title_db"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_title_db" />
+
+                <TextView
+                    android:id="@+id/apply_job_date_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_date"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_date"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_description"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/apply_job_date_db"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_date_db"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_date_db" />
+
+                <TextView
+                    android:id="@+id/apply_job_description_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_description"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_description" />
+
+                <TextView
+                    android:id="@+id/apply_job_numberofEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_employees"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_description_db"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_description_db" />
+
+                <TextView
+                    android:id="@+id/apply_job_numberofEmp_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_numberofEmp"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_numberofEmp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_location"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_numberofEmp_db"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_numberofEmp_db"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_location_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_location"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_location"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_category"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_location_db"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_location_db"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_category_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_category"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_category"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salary"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_category_db"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_category_db"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_salary_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_salary"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_salary"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/apply_job_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apply_before"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_salary_db"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_salary_db"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_before_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_before"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_before"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/apply_job_contact_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_info"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_before_db"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_before_db"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_contact_info_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_contact_info"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_contact_info"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_workingHrs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/approximate_working_hours"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_contact_info_db"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_contact_info_db"
+
+                    />
+
+                <TextView
+                    android:id="@+id/apply_job_workingHrs_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/apply_job_workingHrs"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_job_workingHrs"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

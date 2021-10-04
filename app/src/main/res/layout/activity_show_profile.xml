@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowProfile">
+
+    <LinearLayout
+        android:id="@+id/linear_layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topnavbuttonColor"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back_button_showProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24"
+            android:drawableTint="@color/white"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/show_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/topnavbuttonColor"
+            android:fontFamily="times new roman"
+            android:text="@string/show_profile"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout5">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fitsSystemWindows="true"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/apply_job">
+
+                <TextView
+                    android:id="@+id/shown_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/firstname"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shown_firstname_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/shown_firstname"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_firstname"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shown_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lastname"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/shown_firstname_db"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_firstname_db" />
+
+                <TextView
+                    android:id="@+id/shown_lastname_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/shown_lastname"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_lastname"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shown_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emailph"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/shown_lastname_db"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_lastname_db" />
+
+                <TextView
+                    android:id="@+id/shown_email_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/shown_email"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_email" />
+
+                <TextView
+                    android:id="@+id/shown_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/shown_email_db"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_email_db" />
+
+                <TextView
+                    android:id="@+id/shown_contact_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/shown_contact"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_contact"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shown_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/shown_contact_db"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_contact_db"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shown_location_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/shown_location"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_location"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shown_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/shown_location_db"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_location_db"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shown_gender_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/shown_gender"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_gender"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shown_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/shown_gender_db"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_gender_db"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shown_dob_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icontextColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/shown_dob"
+                    app:layout_constraintTop_toBottomOf="@+id/shown_dob"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

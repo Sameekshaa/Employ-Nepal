@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardJobProvider">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.employnepal.AppBarOverlay">
+
+   <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_provider"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/topnavbuttonColor"
+            app:popupTheme="@style/Theme.employnepal.NoActionBar" >
+
+            <TextView
+                android:id="@+id/job_provider_dashboard_txt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="0dp"
+                android:background="@color/topnavbuttonColor"
+                android:fontFamily="times new roman"
+                android:gravity="center"
+                android:text="@string/job_provider_s_dashboard"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_margin="10dp"
+            android:id="@+id/searchViewProvider"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:queryHint="Search Jobs Here"
+            app:queryBackground="@color/topnavbuttonColor"
+            app:searchHintIcon="@mipmap/search_button"
+            android:background="@drawable/search_layout"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_dashboard_job_provider" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/topnavbuttonColor"
+        android:layout_margin="70dp"
+        app:srcCompat="@drawable/ic_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
