@@ -8,6 +8,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/EmployNepal2/app/src/main/res/drawable-v24/ic_date_range_black_24dp.xml" value="0.32737487231869256" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/EmployNepal2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22407407407407406" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/EmployNepal2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22407407407407406" />
@@ -53,6 +54,7 @@
         <entry key="app/src/main/res/drawable/ic_help_foreground.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_logout_foreground.xml" value="0.328125" />
         <entry key="app/src/main/res/drawable/login_signup.xml" value="0.328125" />
+        <entry key="app/src/main/res/layout/activity_about_us.xml" value="0.37447916666666664" />
         <entry key="app/src/main/res/layout/activity_apply_job.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_dashboard_job_provider.xml" value="0.37447916666666664" />
         <entry key="app/src/main/res/layout/activity_dashboard_job_seeker.xml" value="0.37604166666666666" />
@@ -85,6 +87,7 @@
         <entry key="app/src/main/res/layout/nav_header_dashboard_job_provider.xml" value="0.37447916666666664" />
         <entry key="app/src/main/res/layout/search.xml" value="0.37447916666666664" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/menu/activity_main_drawer_provider.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.37447916666666664" />
         <entry key="app/src/main/res/menu/logout.xml" value="0.37447916666666664" />
         <entry key="app/src/main/res/menu/search.xml" value="0.1" />

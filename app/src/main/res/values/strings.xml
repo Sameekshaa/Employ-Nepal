@@ -96,4 +96,7 @@
     <string name="reset_password">Reset</string>
     <string name="choose_job">Choose Job</string>
 
+    <string name="about_us_text"><b> Version 1.0 </b>\n\nTrial Version \n This is a sample App developed by JASY. \n\nOur Mission \nImproving the job applying and recruiting process.</string>
+    <string name="about_us">About Us</string>
+
 </resources>

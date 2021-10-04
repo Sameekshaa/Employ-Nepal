@@ -102,6 +102,7 @@ public class SignUpActivity extends AppCompatActivity {
                 String passwordSignUp = passwordsignup.getText().toString().trim();
                 String confirmPasswordSignUp = confirmpasswordsignup.getText().toString().trim();
                 String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+                String passwordPattern = "^(?=.*[0-9])(?=.*[a-zA-Z])(?=\\S+$)(?=.*[@#$%^&+=!;]).{6,}$";
 //                String passwordVal="^" +
 ////                                    "(?=.*[0-9])"+
 //                                    "(?=.*[a-z])"+
@@ -171,11 +172,18 @@ public class SignUpActivity extends AppCompatActivity {
                     return;
                 }
 
-                if (passwordSignUp.length() < 6) {
-                    passwordsignup.setError("Password too short, enter minimum 6 characters!");
+//                if (passwordSignUp.length() < 6) {
+//                    passwordsignup.setError("Password too short, enter minimum 6 characters!");
+//                    v.vibrate(100);
+//                    passwordsignup.requestFocus();
+//                    return;
+//                }
+                if (!passwordSignUp.matches(passwordPattern)) {
+                    passwordsignup.setError("Not a strong password! .... Must contain atleast one number, atleast one letter, no space allowed, at least one special symbol - @#$%^&+=!; and must contain atleast 6 chatacters in total");
                     v.vibrate(100);
                     passwordsignup.requestFocus();
                     return;
+
                 }
 //                if (!passwordSignUp.matches(passwordVal)){
 //                    passwordsignup.setError("Password too weak");

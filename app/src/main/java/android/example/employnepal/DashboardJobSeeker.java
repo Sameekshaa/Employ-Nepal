@@ -43,16 +43,11 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class DashboardJobSeeker extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    private AppBarConfiguration mAppBarConfiguration;
     private ActivityDashboardJobSeekerBinding binding;
-
-    private BottomNavigationView bottomNavigationView;
-    private NavController bottomnavController;
     private DrawerLayout mDrawer;
-    private Toolbar toolbar;
     private NavigationView nvDrawer;
-    private EditText searchHereJobSeeker;
-    private ImageView btnSearchJobSeeker;
+//    private EditText searchHereJobSeeker;
+//    private ImageView btnSearchJobSeeker;
 
     DatabaseReference ref;
     FirebaseAuth auth;
@@ -313,7 +308,7 @@ public class DashboardJobSeeker extends AppCompatActivity implements NavigationV
                 startActivity(new Intent(this, DashboardJobSeeker.class));
                 break;
             case R.id.nav_aboutus:
-                Toast.makeText(this, "About us Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, AboutUsActivity.class));
                 break;
             case R.id.nav_editProfile:
                 startActivity(new Intent(this, EditProfile.class));

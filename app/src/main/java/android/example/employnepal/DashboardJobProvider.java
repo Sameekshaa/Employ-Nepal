@@ -313,7 +313,7 @@ public class DashboardJobProvider extends AppCompatActivity implements Navigatio
                 break;
 
             case R.id.nav_aboutus:
-                Toast.makeText(this, "About us Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, AboutUsActivity.class));
                 break;
             case R.id.nav_editProfile:
                 startActivity(new Intent(this, EditProfile.class));
